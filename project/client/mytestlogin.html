@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>mytestlogin</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+</head>
+<body>
+<input type="text" name="mail">
+<input type="password" name="pwd">
+<input type="button" value="登陆" onclick="mytestlogin()">
+</body>
+<script type="text/javascript">
+
+    function mytestlogin(){
+        var mail=document.getElementsByName("mail")[0].value;
+        var pwd=document.getElementsByName("pwd")[0].value;
+        var method,url,param,sync;
+        //method="get";
+        method="post";
+        url="mytestlogin.do";
+        param="mail="+mail+"&pwd="+pwd;
+        sync=false;//执行完返回函数
+        createajax(method,url,param,selectback,sync);//回调函数
+        function selectback(data){
+            alert("进入回调函数");
+            if(myajax.readyState==4&&myajax.status==200) {
+            var re=JSON.parse(myajax.responseText);
+            if(re[0].count==1){
+                alert("登陆成功");
+                window.open("mytest.html");
+
+            }
+            else{
+                alert("用户名或者密码不正确");
+            }
+        }
+    }
+    }
+</script>
+<script type="text/javascript" src="js/myajax.js"></script>
+</html>

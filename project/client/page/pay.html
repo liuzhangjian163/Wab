@@ -1,0 +1,228 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta content="text/html" charset="utf-8"/>
+    <title>支付页面</title>
+    <link rel="stylesheet" href="../css/tan_window.css">
+    <link rel="stylesheet" href="../css/pay_page.css">
+</head>
+<body>
+<div id="whole">
+    <!-----------------------------导航----------------->
+    <div id="nav">
+        <div id="logo">
+            <a href="">
+                <img src="../img/product_list_img/logo.png"><br>
+                <span>CHEVROLET</span>
+            </a>
+        </div>
+        <div id="nav_order">
+            <ul>
+                <li onmouseover="myslide(this)" onmouseout="myslide2(this)"><a href="../home.html">首页</a></li>
+                <li onmouseover="myslide(this)" onmouseout="myslide2(this)"><a href="new_product.html">新品上市</a></li>
+                <li onmouseover="myslide(this)" onmouseout="myslide2(this)"><a href="product_list.html">所有车型</a></li>
+                <li onmouseover="myslide(this)" onmouseout="myslide2(this)"><a href="javascript:login(3)">预约试驾</a></li>
+                <li onmouseover="myslide(this)" onmouseout="myslide2(this)"><a href="about.html">关于我们</a></li>
+            </ul>
+        </div>
+        <div id="nav_login">
+            <span  onmouseover="myslide(this)"  onmouseout="myslide2(this)" class="nav_login1"><a href="user.html">会员中心</a></span>
+            <span class="nav_login2">|</span>
+            <span  onmouseover="myslide(this)"  onmouseout="myslide2(this)" class="nav_login1"><a href="javascript:login(1)">登录</a></span>
+            <span class="nav_login2">|</span>
+            <span  onmouseover="myslide(this)"  onmouseout="myslide2(this)" class="nav_login1"><a href="javascript:login(2)">注册</a></span>
+        </div>
+        <div id="color_lump">&#xf002a;</div>
+    </div>
+    <div id="nav_closes"></div>
+<!--导航到此解释-->
+<div id="pay_header">
+    <div>会员中心</div>
+    <div>产品详情</div>
+    <div>订单详情</div>
+</div>
+<div id="pay_content">
+    <div class="pay_content1">
+      <div>
+        请及时付款，以便及时处理你的预约请求！&nbsp;&nbsp;&nbsp;预约单号:&nbsp;<span style="color: red">9586227200</span><br/>
+        请你在提交预约单后三小时内完成支付，否则你的预约单将自动取消。
+      </div>
+      <div>应付金额:&nbsp;<span>2000</span>&nbsp;元<br/>预付单详情&nbsp;:</div>
+    </div>
+    <!--11111-->
+    <div class="pay_content1" id="pay_content2">
+        <div>
+            商品名称：2015款雪佛兰科迈罗RS限量版<br/>
+            经销商地址：成都市新成温路三环路苏坡立交桥外侧
+        </div>
+        <div>车型：2.0L ECOTEC<br/>联系电话：028-87369797</div>
+        <div>颜色：加州红<br/>预约人：张女士</div>
+    </div>
+    <!--22222-->
+    <div  id="pay_content3">
+         <div class="pay_content3_1">
+             <div><img src="../img/banks/浦发.png" width="150px" height="30px"/></div>
+             <div><img src="../img/banks/邮政.png" width="150px" height="30px"/></div>
+             <div><img src="../img/banks/中国.png" width="150px" height="30px"/></div>
+         </div>
+         <div class="pay_content3_1">
+             <div><img src="../img/banks/成都.png" width="150px" height="30px"/></div>
+             <div><img src="../img/banks/中信.png" width="150px" height="30px"/></div>
+             <div><img src="../img/banks/交通.png" width="150px" height="30px"/></div>
+         </div>
+         <div class="pay_content3_1">
+             <div style="position: relative;left: 5px"><img src="../img/banks/农业.png" width="150px" height="30px"/></div>
+             <div><img src="../img/banks/招商.png" width="150px" height="30px"/></div>
+             <div style="position: relative;left: 5px;bottom: 5px"><img src="../img/banks/工商.png" width="150px" height="40px"/></div>
+         </div>
+        <div id="pay_content3_lt"><span>+</span><br/>选择付款银行</div>
+    </div>
+    <!--             银行结束           -->
+    <div id="pay_content4">
+        <div>
+            <span>再次输入密码&nbsp;:</span><br/>
+            <input type="password" id="re_sure">
+        </div>
+        <div>
+            <div>确认支付</div>
+            <div>完成支付后你可以返回你的<span><a href="user.html">个人中心</a></span>进行查询</div>
+        </div>
+    </div>
+</div>
+<div id="pay_content5"></div>
+<div id="pay_content6"></div>
+<!--页尾-->
+<div id="home_end">
+    <div id="home_end1">
+        <div class="product_model">
+            <h4>轿车</h4>
+            <a href="">迈锐宝</a><br>
+            <a href="">新科鲁兹</a><br>
+            <a href="">科鲁兹经典</a><br>
+        </div>
+        <div class="product_model">
+            <h4></h4><br><br>
+            <a href="">科鲁兹掀背</a><br>
+            <a href="">爱唯欧</a><br>
+            <a href="">赛欧</a><br>
+        </div>
+        <div class="product_model">
+            <h4>SUV</h4>
+            <a href="">科帕奇</a><br>
+            <a href="">创酷</a>
+        </div>
+        <div class="product_model">
+            <h4>跑车</h4>
+            <a href="">科迈罗</a>
+        </div>
+    </div>
+    <div id="home_end2">
+        <h4>联系我们 :</h4>
+        <span>中国上海·浦东新区申江路1500号 (邮编201206)</span><br>
+        <span>全国免费服务热线 :800-820-1912  400-820-1912</span><br>
+        <span>未开通800电话服务的地区及手机用户 :021-50554584</span><br><br>
+        <span>Copyright  2015 SAIC General Motors Co., Ltd. All Rights Reserved</span>
+    </div>
+    <div id="social">
+        <span>&#xe66e;</span>
+        <span>&#xe7f0;</span>
+        <span>&#xe696;</span>
+        <span>&#xe612;</span>
+    </div>
+</div>
+<!--页尾到此结束-->
+</div>
+<!--登陆-->
+<div id="login_window" style="display: none;">
+    <div id="login_close1" onclick="delete_login(1)">&#xe636;</div><!--叉叉-->
+    <div id="smile1"><img src="../img/smile-1.png"></div><!--笑脸-->
+    <div id="login_box"><!--输入框-->
+        <div id="input">&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="邮  箱">&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" placeholder="密  码"></div>
+        <div id="login">登陆</div>
+    </div>
+</div>
+<div id="cover"></div>
+<!--登陆-->
+<!--注册框-->
+<div id="register_window" style="display: none;">
+    <div id="smile2"><img src="../img/smile-1.png" width="96px" height="100px"></div>
+    <div id="register_box">
+        <div id="login_close2" onclick="delete_login(2)">&#xe636;</div><br/><br/>
+        <form action="register.do">
+            <div id="form_reg">
+                <label class="input_label">邮 &nbsp;&nbsp;&nbsp;箱:</label> &nbsp; &nbsp;<input type="text"><br/><br/>
+                <label class="input_label">密 &nbsp;&nbsp;&nbsp;码:</label> &nbsp; &nbsp;<input type="text"><br/><br/>
+                <label class="input_label" id="input_label_3">确认密码:</label><input type="text">
+            </div>
+            <div id="register">注 &nbsp;&nbsp;&nbsp;册</div>
+        </form>
+    </div>
+</div>
+<!--注册完-->
+<!--预约试驾-->
+<div id="pre_drive_window">
+    <span>预约试驾</span>
+    <div id="login_close4" onclick="delete_login(3)">&#xe636;</div>
+    <div id="smile3"><img src="../img/smile-1.png" width="96px" height="100px"></div>
+    <div id="pre_drive_box">
+        <form action="pre_drive.do">
+            <label>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"><br/><br/>
+            <label>移动电话:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"><br/><br/>
+            <label>称&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;谓:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="sex" class="sex">男士&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="sex" class="sex">女士
+            <br/><br/>
+            <label>车系(型号):</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"><br/><br/>
+            <label>所在城市:</label>&nbsp;
+            <span style="color: white">省&nbsp;</span>
+            <select class="city_select" id="province" onclick="changecity();">
+                <option value="1">四川</option>
+                <option value="2">湖南</option>
+                <option value="3">广东</option>
+                <option value="4">湖北</option>
+                <option value="5">辽宁</option>
+                <option value="6">江西</option>
+                <option value="7">安徽</option>
+                <option value="8">福建</option>
+            </select>
+            <span style="color: white">市&nbsp;</span>
+            <select class="city_select" id="city">
+                <option>--请选择省--</option>
+            </select>
+            <br/><br/>
+            <label>选择经销商:</label>&nbsp;&nbsp;&nbsp;
+            <select class="name_select"><option selected="selected"></option></select><br/><br/>
+            <label>预约时间:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select class="time_select">
+                <option>2015</option>
+                <option>2016</option>
+                <option>2017</option>
+            </select>
+            <select class="time_select" id="month" onclick=" changetime();">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="1">3</option>
+                <option value="3">4</option>
+                <option value="1">5</option>
+                <option value="3">6</option>
+                <option value="1">7</option>
+                <option value="1">8</option>
+                <option value="3">9</option>
+                <option value="1">10</option>
+                <option value="3">11</option>
+                <option value="1">12</option>
+            </select>
+            <select class="time_select" id="date">
+                <option>--选择--</option>
+            </select>
+            <br/><br/>
+            <div id="pre_drive_submit">提&nbsp;&nbsp;交</div>
+        </form>
+    </div>
+</div>
+<!--预约试驾完-->
+</body>
+<script type="text/javascript" src="../js/tan_window.js" ></script>
+<script type="text/javascript" src="../js/head_end.js"></script>
+</html>

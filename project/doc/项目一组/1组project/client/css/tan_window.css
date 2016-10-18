@@ -1,0 +1,370 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    /*background-image: url("../image/big-1.png");*/
+    /*background-size: 1400px;*/
+    background-color: transparent;
+    font-family: "微软雅黑";
+    -webkit-user-select:none;
+}
+@font-face {
+    font-family: "chacha";
+    src: url('../font/chacha.ttf');
+}
+#login_window{
+   /*display: none;*/
+    width: 100%;
+    height: 667px;
+    /*background-color: red;*/
+    position: absolute;
+    z-index: 999;
+}
+#login_close1{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: transparent;
+    border: 2px solid white;
+    font-family:"chacha";
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    cursor: pointer;
+}
+#smile1{
+    position: absolute;
+    top: 140px;
+    left:40%;
+}
+#login_box{
+    position: absolute;
+    left: 25%;
+    bottom: 90px;
+}
+#input{
+    width: 540px;
+    height: 77px;
+    background-color: #EAE6E0;
+    border-radius: 5px;
+    line-height: 77px;
+    float: left;
+}
+#input input{
+   width: 240px;
+    height: 40px;
+}
+#login{
+    width: 45px;
+    height: 40px;
+    background-color: #FFB900;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    line-height: 40px;
+    float: left;
+    margin-top:20px;
+    cursor: pointer;
+}
+#cover{
+    width:100%;
+    height:667px;
+    /*background-image: url("../image/big-1.png");*/
+    /*background-size: 1400px;*/
+    background-color: rgba(128, 128, 0, 0.45);
+    position:absolute;
+    top:-667px;
+    z-index:700;
+    -webkit-transition:all .5s linear;
+}
+/*-----------------登陆框完--------------------*/
+#smile2{
+    position: absolute;
+    top: 43px;
+    left:45%;
+    z-index: 700;
+}
+#register_box{
+    width: 420px;
+    height: 330px;
+    background-color: rgba(255, 255, 255, 0.40);
+    outline: 1px solid white;
+    position: absolute;
+    left: 33%;
+    top: 160px;
+    text-align: center;
+    z-index: 999;
+}
+#login_close2{
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    font-family:"chacha";
+    color: white;
+    font-size: 10px;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 20px;
+    position: absolute;
+    right:15px;
+    top: 15px;
+    cursor: pointer
+;
+}
+#register_box input{
+    width: 240px;
+    height: 40px;
+}
+.input_label{
+    color: white;
+}
+#register{
+    width: 72px;
+    height: 36px;
+   background-color: #E2AF34;
+    color: white;
+    line-height: 36px;
+    position: absolute;
+    right: 50px;
+    bottom: 30px;
+}
+/*----------注册完------------------------*/
+#change_window{
+     width: 654px;
+     height: 335px;
+    background-color: rgba(255, 255, 255, 0.40);
+    position: absolute;
+    left: 345px;
+    top: 160px;
+}
+#change_window span{
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+}
+#login_close3{
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    font-family:"chacha";
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 25px;
+    position: absolute;
+    right:15px;
+    top: 10px;
+}
+#smile3{
+    position: absolute;
+    top: 10px;
+    left:45%;
+}
+#change_box>form input{
+    width: 240px;
+    height: 20px;
+    background-color: transparent;
+}
+#now_pwd{
+    display: inline-block;
+    position: relative;
+    left: -15px;
+}
+#change_box{
+    position: absolute;
+    left: 172px;
+    top: 140px;
+}
+#change_submit{
+    width: 72px;
+    height: 36px;
+    background-color: #E2AF34;
+    color: white;
+    text-align: center;
+    line-height: 36px;
+    position: absolute;
+    right: 0px;
+    top: 150px;
+}
+/*------------修改密码完---------------*/
+/*-----------预约试驾-----------------------*/
+#pre_drive_window{
+    width: 650px;
+    height: 510px;
+    background-color: rgba(255, 255, 255, 0.40);
+    position: absolute;
+    left: 345px;
+    top: 77px;
+    display: none;
+}
+#pre_drive_window>span{
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    left: 36px;
+    top: 31px;
+}
+#pre_drive_box{
+    position: absolute;
+    left: 200px;
+    top: 120px;
+}
+#pre_drive_box>form input{
+    width: 150px;
+    height: 20px;
+    color: white;background-color: transparent;border: 1px solid white;
+}
+#pre_drive_box>form label{
+    color: white;
+}
+.name_select{
+    width: 150px;
+    height: 25px;
+    color: white;background-color: transparent;border: 1px solid white;font-size: 16px
+}
+.city_select{
+    width: 60px;
+    height: 25px;
+    color: white;background-color: transparent;border: 1px solid white;font-size: 16px
+}
+.time_select{
+    width: 47px;
+    height: 25px;
+    color: white;background-color: transparent;border: 1px solid white;font-size: 16px
+}
+#login_close4{
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    font-family:"chacha";
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 25px;
+    position: absolute;
+    right:13px;
+    top: 13px;
+    cursor: pointer;
+}
+#pre_drive_submit{
+    width: 72px;
+    height: 36px;
+    background-color: #E2AF34;
+    color: white;
+    text-align: center;
+    line-height: 36px;
+    position: absolute;
+    left: 300px;
+    top: 340px;
+}
+/*预约试驾完*/
+/*   订单   */
+#order_window{
+    width: 650px;
+    height: 510px;
+    background-color: rgba(255, 255, 255, 0.40);
+    position: absolute;
+    left: 345px;
+    top: 77px;
+    display: none;
+}
+#order_window>span{
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    left: 36px;
+    top: 31px;
+}
+#order_box{
+    position: absolute;
+    left: 200px;
+    top: 120px;
+}
+#order_box>form input{
+    width: 150px;
+    height: 20px;
+    color: white;background-color: transparent;border: 1px solid white;
+}
+#order_box>form label{
+    color: white;
+}
+.name_select{
+    width: 150px;
+    height: 25px;
+    background: transparent;border: 1px solid white;font-size: 16px;
+}
+.city_select{
+    width: 60px;
+    height: 25px;
+    color: white;background-color: transparent;border: 1px solid white;font-size: 16px
+}
+.time_select{
+    width: 47px;
+    height: 25px;
+    color: white;background-color: transparent;border: 1px solid white;font-size: 16px
+}
+#login_close4{
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    font-family:"chacha";
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 25px;
+    position: absolute;
+    right:13px;
+    top: 13px;
+}
+#order_submit{
+    width: 72px;
+    height: 36px;
+    background-color: #E2AF34;
+    color: white;
+    text-align: center;
+    line-height: 36px;
+    position: absolute;
+    left: 170px;
+    top: 300px;
+    border: 1px solid white;
+}
+#login_close5{
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    font-family:"chacha";
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 25px;
+    position: absolute;
+    right:13px;
+    top: 13px;
+    cursor: pointer;
+}
+#smile4{
+    position: absolute;
+    top: 10px;
+    left:45%;
+}
+/*  订单  */

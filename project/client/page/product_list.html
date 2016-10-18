@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>所有产品</title>
+</head>
+<link rel="stylesheet" href="../css/products_list.css"/>
+<link rel="stylesheet" href="../css/tan_window.css"/>
+<body>
+<!--包含整个-->
+<div id="whole">
+                    <!-----------------------------导航----------------->
+                    <div id="nav">
+                        <div id="logo">
+                            <a href="">
+                                <img src="../img/product_list_img/logo.png"><br>
+                                <span>CHEVROLET</span>
+                            </a>
+                        </div>
+                        <div id="nav_order">
+                            <ul>
+                                <li onmouseover="myslide(this)" onmouseout="myslide2(this)"><a href="../home.html">首页</a></li>
+                                <li onmouseover="myslide(this)" onmouseout="myslide2(this)"><a href="new_product.html">新品上市</a></li>
+                                <li onmouseover="myslide(this)" onmouseout="myslide2(this)"><a href="product_list.html">所有车型</a></li>
+                                <li onmouseover="myslide(this)" onmouseout="myslide2(this)"><a href="javascript:login(3)">预约试驾</a></li>
+                                <li onmouseover="myslide(this)" onmouseout="myslide2(this)"><a href="about.html">关于我们</a></li>
+                            </ul>
+                        </div>
+                        <div id="nav_login">
+                            <span  onmouseover="myslide(this)"  onmouseout="myslide2(this)" class="nav_login1"><a href="user.html">会员中心</a></span>
+                            <span class="nav_login2">|</span>
+                            <span  onmouseover="myslide(this)"  onmouseout="myslide2(this)" class="nav_login1"><a href="javascript:login(1)">登录</a></span>
+                            <span class="nav_login2">|</span>
+                            <span  onmouseover="myslide(this)"  onmouseout="myslide2(this)" class="nav_login1"><a href="javascript:login(2)">注册</a></span>
+                        </div>
+                        <div id="color_lump">&#xf002a;</div>
+                    </div>
+                    <div id="nav_closes"></div>
+
+<!-----------------------------list_banner----------------->
+<div id="list_bannnerdiv">
+    <div>
+        <img src="../img/product_list_img/list_banner.jpg"  id="list_banner"/>
+    </div>
+</div>
+    <!-----------------------------轿车分界线----------------->
+<div id="list_carline">
+    <div class="carline1"></div>
+    <div class="carline2"></div>
+    <div class="carline3"></div>
+    <div class="carline4"></div>
+    <div class="carline5"></div>
+    <div class="carline_font1 car" onclick="jiaoche(1)">轿车</div>
+    <div class="carline6"></div>
+    <div class="carline7"></div>
+    <div class="carline_font2 car" onclick="jiaoche(2)">SUV</div>
+    <div class="carline8"></div>
+    <div class="carline9"></div>
+    <div class="carline_font3 car" onclick="jiaoche(3)">跑车</div>
+</div>
+    <!-----------------------------轿车car----------------->
+<div id="list_saloon_car">
+    <div id="saloon_car_div1">
+        <img src="../img/product_list_img/j_mairuibao.jpg" id="saloon_car1" />
+    <div id="saloon_car_shade1"><p class="saloon_car_shade1_p">迈锐宝</p>
+        <span class="saloon_car_shade1_span1">斩获2015年美系中高级车销售冠军</span><br>
+        <span class="saloon_car_shade1_span2">传奇只属于延续它的人</span></div>
+        <div id="saloon_car_button_div1">
+        <div class="saloon_car_button1" onclick="login(3)">预约试驾</div>
+        <div class="saloon_car_button2" onclick="login(4)">立即预定</div>
+        <div class="saloon_car_button3">点击收藏</div>
+        <div class="saloon_car_button4"><a href="product_detail.html">查看详情</a><span>&gt;&gt;</span></div>
+        </div>
+    </div>
+    <div id="saloon_car_div2">
+        <img src="../img/product_list_img/j_newkeluozi.jpg" id="saloon_car2" />
+    <div id="saloon_car_shade2"><p class="saloon_car_shade1_p">新科鲁兹</p>
+        <span class="saloon_car_shade1_span1">新生代实力性能中级车</span><br>
+        <span class="saloon_car_shade1_span2">新表现 更过瘾</span></div>
+        <div id="saloon_car_button_div2">
+            <div class="saloon_car_button1" onclick="login(3)">预约试驾</div>
+            <div class="saloon_car_button2" onclick="login(4)">立即预定</div>
+            <div class="saloon_car_button3">点击收藏</div>
+            <div class="saloon_car_button4"><a href="product_detail.html">查看详情</a><span>&gt;&gt;</span></div>
+        </div>
+    </div>
+    <div id="saloon_car_div3">
+        <img src="../img/product_list_img/j_oldkeluzi.jpg" id="saloon_car3" />
+    <div id="saloon_car_shade3"><p class="saloon_car_shade1_p">科鲁兹经典</p>
+        <span class="saloon_car_shade1_span1">新生代实力性能中级车</span><br>
+        <span class="saloon_car_shade1_span2">实例品质 触手可及</span></div>
+        <div id="saloon_car_button_div3">
+            <div class="saloon_car_button1" onclick="login(3)">预约试驾</div>
+            <div class="saloon_car_button2" onclick="login(4)">立即预定</div>
+            <div class="saloon_car_button3">点击收藏</div>
+            <div class="saloon_car_button4"><a href="product_detail.html">查看详情</a><span>&gt;&gt;</span></div>
+        </div>
+    </div>
+    <div id="saloon_car_div4">
+        <img src="../img/product_list_img/j_xianbeikeluzi.jpg" id="saloon_car4" />
+    <div id="saloon_car_shade4"><p class="saloon_car_shade1_p">科鲁兹掀背</p>
+        <span class="saloon_car_shade1_span1">新生代潮流性能中级车</span><br>
+        <span class="saloon_car_shade1_span2">掀 · 活 · 青春 表现由我</span></div>
+        <div id="saloon_car_button_div4">
+            <div class="saloon_car_button1" onclick="login(3)">预约试驾</div>
+            <div class="saloon_car_button2" onclick="login(4)">立即预定</div>
+            <div class="saloon_car_button3">点击收藏</div>
+            <div class="saloon_car_button4"><a href="product_detail.html">查看详情</a><span>&gt;&gt;</span></div>
+        </div>
+    </div>
+    <div id="saloon_car_div5">
+        <img src="../img/product_list_img/j_aiweiou.jpg" id="saloon_car5" />
+    <div id="saloon_car_shade5"><p class="saloon_car_shade1_p">爱唯欧</p>
+        <span class="saloon_car_shade1_span1">美式精品家轿</span><br>
+        <span class="saloon_car_shade1_span2">放手去生活</span></div>
+        <div id="saloon_car_button_div5">
+            <div class="saloon_car_button1" onclick="login(3)">预约试驾</div>
+            <div class="saloon_car_button2" onclick="login(4)">立即预定</div>
+            <div class="saloon_car_button3">点击收藏</div>
+            <div class="saloon_car_button4"><a href="product_detail.html">查看详情</a><span>&gt;&gt;</span></div>
+        </div>
+    </div>
+    <div id="saloon_car_div6">
+        <img src="../img/product_list_img/j_saiou.jpg" id="saloon_car6" />
+    <div id="saloon_car_shade6"><p class="saloon_car_shade1_p">赛欧</p>
+        <span class="saloon_car_shade1_span1">国民家轿新标杆</span><br>
+        <span class="saloon_car_shade1_span2">因为有你,幸福大不同</span></div>
+        <div id="saloon_car_button_div6">
+            <div class="saloon_car_button1" onclick="login(3)">预约试驾</div>
+            <div class="saloon_car_button2" onclick="login(4)">立即预定</div>
+            <div class="saloon_car_button3">点击收藏</div>
+            <div class="saloon_car_button4"><a href="product_detail.html">查看详情<a><span>&gt;&gt;</span></div>
+        </div>
+    </div>
+</div>
+<!-----------------------------suv分界线----------------->
+<div id="list_suv_line">
+    <div class="carline1"></div>
+    <div class="carline2"></div>
+    <div class="carline3"></div>
+    <div class="carline4"></div>
+    <div class="carline5"></div>
+    <div class="carline_font1 car" onclick="jiaoche(1)">轿车</div>
+    <div class="carline6"></div>
+    <div class="carline7"></div>
+    <div class="carline_font2 car" onclick="jiaoche(2)">SUV</div>
+    <div class="carline8"></div>
+    <div class="carline9"></div>
+    <div class="carline_font3 car" onclick="jiaoche(3)">跑车</div>
+</div>
+<!-----------------------------SUV----------------->
+<div id="list_suv">
+    <div id="suv_div1">
+        <img src="../img/product_list_img/s_kepaqi.jpg" id="suv_car1" />
+    <div id="suv_car_shade1"><p class="saloon_car_shade1_p">科帕奇</p>
+        <span class="saloon_car_shade1_span1">七人座美式大SUV</span><br>
+        <span class="saloon_car_shade1_span2">装下所有</span></div>
+        <div id="suv_car_button_div1">
+            <div class="saloon_car_button1" onclick="login(3)">预约试驾</div>
+            <div class="saloon_car_button2" onclick="login(4)">立即预定</div>
+            <div class="saloon_car_button3">点击收藏</div>
+            <div class="saloon_car_button4"><a href="product_detail.html">查看详情</a><span>&gt;&gt;</span></div>
+        </div>
+    </div>
+    <div id="suv_div2">
+        <img src="../img/product_list_img/s_chuangku.jpg" id="suv_car2" />
+    <div id="suv_car_shade2"><p class="saloon_car_shade1_p">创酷</p>
+        <span class="saloon_car_shade1_span1">新生代城市SUV</span><br>
+        <span class="saloon_car_shade1_span2">五大升级 焕新登场</span></div>
+        <div id="suv_car_button_div2">
+            <div class="saloon_car_button1" onclick="login(3)">预约试驾</div>
+            <div class="saloon_car_button2" onclick="login(4)">立即预定</div>
+            <div class="saloon_car_button3">点击收藏</div>
+            <div class="saloon_car_button4"><a href="product_detail.html">查看详情</a><span>&gt;&gt;</span></div>
+        </div>
+    </div>
+    </div>
+<!-----------------------------跑车分界线----------------->
+<div id="list_sports_car_line">
+    <div class="carline1"></div>
+    <div class="carline2"></div>
+    <div class="carline3"></div>
+    <div class="carline4"></div>
+    <div class="carline5"></div>
+    <div class="carline_font1 car" onclick="jiaoche(1)">轿车</div>
+    <div class="carline6"></div>
+    <div class="carline7"></div>
+    <div class="carline_font2 car" onclick="jiaoche(2)">SUV</div>
+    <div class="carline8"></div>
+    <div class="carline9"></div>
+    <div class="carline_font3 car" onclick="jiaoche(3)">跑车</div>
+</div>
+<!-----------------------------跑车----------------->
+<div id="list_sports_car">
+    <div id="sports_car_text">
+    <p class="sports_car_text_p">2015款科迈罗</p>
+    <span class="sports_car_text_span1">中控台配备了7寸彩色触摸屏,</span><br>
+    <span class="sports_car_text_span2">显示效果非常细腻,</span><br>
+    <span class="sports_car_text_span3">同时其中还融合了雪佛兰</span><br>
+    <span class="sports_car_text_span4">MyLink智能车载互联系统.</span><br>
+        <span class="sports_car_text_span5">带给您非一般的体验</span>
+    </div>
+    <div id="sports_car_div1">
+        <img src="../img/product_list_img/p_kemailuo.jpg" id="sports_car1" />
+    <div id="sports_car_shade1"></div>
+        <div id="sports_car_button_div1">
+            <div class="sports_car_button1" onclick="login(3)">预约试驾</div>
+            <div class="sports_car_button2" onclick="login(4)">立即预定</div>
+            <div class="sports_car_button3">点击收藏</div>
+            <div class="sports_car_button4"><a href="product_detail.html">查看详情</a><span>&gt;&gt;</span></div>
+        </div>
+    </div>
+</div>
+                    <!--页尾-->
+                    <div id="home_end">
+                        <div id="home_end1">
+                            <div class="product_model">
+                                <h4>轿车</h4>
+                                <a href="">迈锐宝</a><br>
+                                <a href="">新科鲁兹</a><br>
+                                <a href="">科鲁兹经典</a><br>
+                            </div>
+                            <div class="product_model">
+                                <h4></h4><br><br>
+                                <a href="">科鲁兹掀背</a><br>
+                                <a href="">爱唯欧</a><br>
+                                <a href="">赛欧</a><br>
+                            </div>
+                            <div class="product_model">
+                                <h4>SUV</h4>
+                                <a href="">科帕奇</a><br>
+                                <a href="">创酷</a>
+                            </div>
+                            <div class="product_model">
+                                <h4>跑车</h4>
+                                <a href="">科迈罗</a>
+                            </div>
+                        </div>
+                        <div id="home_end2">
+                            <h4>联系我们 :</h4>
+                            <span>中国上海·浦东新区申江路1500号 (邮编201206)</span><br>
+                            <span>全国免费服务热线 :800-820-1912  400-820-1912</span><br>
+                            <span>未开通800电话服务的地区及手机用户 :021-50554584</span><br><br>
+                            <span>Copyright  2015 SAIC General Motors Co., Ltd. All Rights Reserved</span>
+                        </div>
+                        <div id="social">
+                            <span>&#xe66e;</span>
+                            <span>&#xe7f0;</span>
+                            <span>&#xe616;</span>
+                            <span>&#xe60d;</span>
+                        </div>
+                    </div>
+                    <!--页尾结束-->
+<!--包含整个-->
+</div>
+<!--登陆-->
+<div id="login_window" style="display: none;">
+    <div id="login_close1" onclick="delete_login(1)">&#xe636;</div><!--叉叉-->
+    <div id="smile1"><img src="../img/smile-1.png"></div><!--笑脸-->
+    <div id="login_box"><!--输入框-->
+        <div id="input">&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="邮  箱">&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" placeholder="密  码"></div>
+        <div id="login">登陆</div>
+    </div>
+</div>
+<div id="cover"></div>
+<!--登陆-->
+<!--注册框-->
+<div id="register_window" style="display: none;">
+    <div id="smile2"><img src="../img/smile-1.png" width="96px" height="100px"></div>
+    <div id="register_box">
+        <div id="login_close2" onclick="delete_login(2)">&#xe636;</div><br/><br/>
+        <form action="register.do">
+            <div id="form_reg">
+                <label class="input_label">邮 &nbsp;&nbsp;&nbsp;箱:</label> &nbsp; &nbsp;<input type="text"><br/><br/>
+                <label class="input_label">密 &nbsp;&nbsp;&nbsp;码:</label> &nbsp; &nbsp;<input type="text"><br/><br/>
+                <label class="input_label" id="input_label_3">确认密码:</label><input type="text">
+            </div>
+            <div id="register">注 &nbsp;&nbsp;&nbsp;册</div>
+        </form>
+    </div>
+</div>
+<!--注册完-->
+<!--预约试驾-->
+<div id="pre_drive_window">
+    <span>预约试驾</span>
+    <div id="login_close4" onclick="delete_login(3)">&#xe636;</div>
+    <div id="smile3"><img src="../img/smile-1.png" width="96px" height="100px"></div>
+    <div id="pre_drive_box">
+        <form action="pre_drive.do">
+            <label>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"><br/><br/>
+            <label>移动电话:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"><br/><br/>
+            <label>称&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;谓:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="sex" class="sex">男士&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="sex" class="sex">女士
+            <br/><br/>
+            <label>车系(型号):</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"><br/><br/>
+            <label>所在城市:</label>&nbsp;
+            <span style="color: white">省&nbsp;</span>
+            <select class="city_select" id="province" onclick="changecity();">
+                <option value="1">四川</option>
+                <option value="2">湖南</option>
+                <option value="3">广东</option>
+                <option value="4">湖北</option>
+                <option value="5">辽宁</option>
+                <option value="6">江西</option>
+                <option value="7">安徽</option>
+                <option value="8">福建</option>
+            </select>
+            <span style="color: white">市&nbsp;</span>
+            <select class="city_select" id="city">
+                <option>--请选择省--</option>
+            </select>
+            <br/><br/>
+            <label>选择经销商:</label>&nbsp;&nbsp;&nbsp;
+            <select class="name_select"><option selected="selected"></option></select><br/><br/>
+            <label>预约时间:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select class="time_select">
+                <option>2015</option>
+                <option>2016</option>
+                <option>2017</option>
+            </select>
+            <select class="time_select" id="month" onclick=" changetime();">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="1">3</option>
+                <option value="3">4</option>
+                <option value="1">5</option>
+                <option value="3">6</option>
+                <option value="1">7</option>
+                <option value="1">8</option>
+                <option value="3">9</option>
+                <option value="1">10</option>
+                <option value="3">11</option>
+                <option value="1">12</option>
+            </select>
+            <select class="time_select" id="date">
+                <option>--选择--</option>
+            </select>
+            <br/><br/>
+            <div id="pre_drive_submit">提&nbsp;&nbsp;交</div>
+        </form>
+    </div>
+</div>
+<!--预约试驾完-->
+<!--订单-->
+<div id="order_window">
+    <span>订单</span>
+    <div id="login_close5" onclick="delete_login(4)">&#xe636;</div>
+    <div id="smile4"><img src="../img/smile-1.png" width="96px" height="100px"></div>
+    <div id="order_box">
+        <form action="order.do">
+            <label>型&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text"><br/><br/><br/>
+            <label>颜&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;色:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select class="name_select">
+                <option>加州红</option>
+                <option>自尊黄</option>
+                <option>海洋蓝</option>
+            </select><br/><br/><br/>
+            <label>所在城市:</label>&nbsp;
+            <span style="color: white">省&nbsp;</span>
+            <select class="city_select" id="province1" onclick="changecity1();">
+                <option value="1">四川</option>
+                <option value="2">湖南</option>
+                <option value="3">广东</option>
+                <option value="4">湖北</option>
+                <option value="5">辽宁</option>
+                <option value="6">江西</option>
+                <option value="7">安徽</option>
+                <option value="8">福建</option>
+            </select>
+            <span style="color: white">市&nbsp;</span>
+            <select class="city_select" id="city1">
+                <option>--请选择省--</option>
+            </select><br/><br/><br/>
+            <label>选择经销商:</label>&nbsp;&nbsp;&nbsp;
+            <select class="name_select">
+                <option>SUV</option>
+                <option>JIAOCHE</option>
+                <option>PAOCHE</option>
+            </select><br/><br/>
+            <label>定&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;金:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: white">2000</span>
+            <br/><br/>
+            <div id="order_submit">提&nbsp;&nbsp;交</div>
+        </form>
+    </div>
+</div>
+<!--订单-->
+</body>
+<script type="text/javascript" src="../js/proudcut_list.js"></script>
+<script type="text/javascript" src="../js/tan_window.js"></script>
+</html>

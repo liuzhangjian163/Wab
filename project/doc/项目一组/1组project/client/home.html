@@ -1,0 +1,164 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title></title>
+    <meta content="text/html" charset="utf-8">
+</head>
+
+    <link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/head.css">
+<link rel="stylesheet" href="css/tan_window.css">
+<body onload="carousel()">
+<div id="whole">
+    <!--包含整个页面-->
+<div id="nav">
+    <div id="logo">
+        <a href="">
+            <img src="img/home_logo.png"><br>
+            <span>CHEVROLET</span>
+        </a>
+    </div>
+    <div id="nav_order">
+        <ul>
+            <li onmouseover="myslide(this)" onmouseout="myslide2(this)"><a href="home.html">首页</a></li>
+            <li onmouseover="myslide(this)" onmouseout="myslide2(this)"><a href="page/new_product.html">新品上市</a></li>
+            <li onmouseover="myslide(this)" onmouseout="myslide2(this)"><a href="page/product_list.html">所有车型</a></li>
+            <li onmouseover="myslide(this)" onmouseout="myslide2(this)"><a href="javascript:login(3)">预约试驾</a></li>
+            <li onmouseover="myslide(this)" onmouseout="myslide2(this)"><a href="page/about.html">关于我们</a></li>
+        </ul>
+    </div>
+    <div id="nav_login">
+        <span  onmouseover="myslide(this)"  onmouseout="myslide2(this)" class="nav_login1"><a href="page/user.html">会员中心</a></span>
+        <span class="nav_login2">|</span>
+        <span  onmouseover="myslide(this)"  onmouseout="myslide2(this)" class="nav_login1"><a href="javascript:login(1)">登录</a></span>
+        <span class="nav_login2">|</span>
+        <span  onmouseover="myslide(this)"  onmouseout="myslide2(this)" class="nav_login1"><a href="javascript:login(2)">注册</a></span>
+    </div>
+    <div id="color_lump">&#xf002a;</div>
+</div>
+<div id="nav_closes"></div>
+   <!--   banner  -->
+    <div id="home_banner">
+        <div id="home_banner1">
+            <img src="img/home_big1.jpg"/><img src="img/home_big2.jpg"/><img src="img/home_big3.jpg"/>
+            <div id="home_font1" onclick="button1(this)">&#xe7e6;</div>
+            <div id="home_font2" onclick="button2(this)">&#xe653;</div>
+        </div>
+    </div>
+
+<!--    show  -->
+    <div id="home_show">
+
+        <a href="product_list.html" class="home_show1"><img src="img/home_show1.jpg"/>
+            <div id="home_show_A"><h4>新 科 鲁 兹</h4><span>新生代实力型中级车<br/><br/>实力品质触手可及</span></div>
+        </a>
+
+        <a href="product_list.html" class="home_show1"><img src="img/home_show2.jpg"/>
+            <div id="home_show_B"><h4>迈&nbsp;  锐&nbsp;  宝</h4><span>传奇只属于不断继续写它的人</span></div>
+         </a>
+
+        <a href="product_list.html" class="home_show1"><img src="img/home_show3.jpg"/>
+            <div id="home_show_C"><h4>科&nbsp; 迈&nbsp; 罗</h4><span>传 奇 性 能 跑 车<br/><br/>英 雄 唤 英 雄</span></div>
+        </a>
+
+        <a href="product_list.html" class="home_show2"><img src="img/home_show4.jpg"/>
+            <div id="home_show2_D"><h4>科&nbsp;  帕&nbsp;  奇</h4><span>七 人 座 大 美 式 s u v<br/><br/>装 下 所 有</span></div>
+        </a>
+
+        <a href="product_list.html" class="home_show2"><img src="img/home_show5.jpg"/>
+            <div id="home_show2_E"><h4>创 &nbsp; &nbsp; &nbsp; 酷</h4><span>新 生 代 城 市 S U V<br/><br/>五 大 升 级 焕 新 登 场</span></div>
+        </a>
+
+        <a href="product_list.html" class="home_show2"><img src="img/home_show6.jpg"/>
+            <div id="home_show2_F"><h4>科&nbsp;  帕&nbsp;  奇</h4><span>渴 望 顽 心，情 怀 回 忆</span></div>
+        </a>
+    </div>
+      <div id="home_end">
+         <span id="home_end1">语言 &nbsp; &nbsp;社会 &nbsp;&nbsp; 联系我们</span>
+          <span id="home_end2">cookle政策 &nbsp; &nbsp;保密条款 &nbsp;&nbsp; 条款&有限公司</span>
+      </div>
+    <!--包含整个页面-->
+</div>
+
+<!--登陆-->
+<div id="login_window" style="display: none;">
+    <div id="login_close1" onclick="delete_login(1)">&#xe636;</div><!--叉叉-->
+    <div id="smile1"><img src="img/smile-1.png"></div><!--笑脸-->
+    <div id="login_box"><!--输入框-->
+        <div id="input">&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="邮  箱">&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" placeholder="密  码"></div>
+        <div id="login">登陆</div>
+    </div>
+</div>
+<div id="cover"></div>
+<!--登陆-->
+<!--注册框-->
+<div id="register_window" style="display: none;">
+    <div id="smile2"><img src="img/smile-1.png" width="96px" height="100px"></div>
+    <div id="register_box">
+        <div id="login_close2" onclick="delete_login(2)">&#xe636;</div><br/><br/>
+        <form action="register.do">
+            <label class="input_label">邮 &nbsp;&nbsp;&nbsp;箱:</label> &nbsp; &nbsp;<input type="text"><br/><br/>
+            <label class="input_label">密 &nbsp;&nbsp;&nbsp;码:</label> &nbsp; &nbsp;<input type="text"><br/><br/>
+            <label class="input_label">确认密码:</label>&nbsp;<input type="text">
+            <div id="register">注 &nbsp;&nbsp;&nbsp;册</div>
+        </form>
+    </div>
+</div>
+<!--注册完-->
+<!--预约试驾-->
+<div id="pre_drive_window">
+    <span>预约试驾</span>
+    <div id="login_close4" onclick="delete_login(3)">&#xe636;</div>
+    <div id="smile3"><img src="img/smile-1.png" width="96px" height="100px"></div>
+    <div id="pre_drive_box">
+        <form action="pre_drive.do">
+            <label>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"><br/><br/>
+            <label>移动电话:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"><br/><br/>
+            <label>称&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;谓:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <select class="name_select"><option></option></select><br/><br/>
+            <label>车系(型号):</label>&nbsp;&nbsp;&nbsp;<input type="text"><br/><br/>
+            <label>所在城市:</label>&nbsp;
+            <span style="color: white">省&nbsp;</span><select class="city_select"><option selected="selected">四川</option></select>
+            <span style="color: white">市&nbsp;</span><select class="city_select"><option selected="selected">成都</option></select>
+            <br/><br/>
+            <label>选择经销商:</label>&nbsp;
+            <select class="name_select"><option selected="selected">*******</option></select><br/><br/>
+            <label>预约时间:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <select class="time_select"><option selected="selected"></option></select>
+            <select class="time_select"><option selected="selected"></option></select>
+            <select class="time_select"><option selected="selected"></option></select>
+            <br/><br/>
+            <div id="pre_drive_submit">提&nbsp;&nbsp;交</div>
+        </form>
+    </div>
+</div>
+<!--预约试驾完-->
+<!--订单-->
+<div id="order_window">
+    <span>订单</span>
+    <div id="login_close5" onclick="delete_login(4)">&#xe636;</div>
+    <div id="smile4"><img src="img/smile-1.png" width="96px" height="100px"></div>
+    <div id="order_box">
+        <form action="order.do">
+            <label>型&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"><br/><br/><br/>
+            <label>颜&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;色:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <select class="name_select"><option></option></select><br/><br/><br/>
+            <label>所在城市:</label>&nbsp;
+            <span style="color: white">省&nbsp;</span><select class="city_select"><option selected="selected"></option></select>
+            <span style="color: white">市&nbsp;</span><select class="city_select"><option selected="selected"></option></select>
+            <br/><br/><br/>
+            <label>选择经销商:</label>&nbsp;
+            <select class="name_select"><option selected="selected"></option></select><br/><br/>
+            <label>定&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;金:</label>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: white">2000</span>
+            <br/><br/>
+            <div id="order_submit">提&nbsp;&nbsp;交</div>
+        </form>
+    </div>
+</div>
+<!--订单-->
+</body>
+<script type="text/javascript" src="js/home.js"></script>
+<script type="text/javascript" src="js/head_end.js"></script>
+<script type="text/javascript" src="js/tan_window.js"></script>
+</html>

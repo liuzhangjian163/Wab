@@ -1,0 +1,210 @@
+/**
+ * Created with JetBrains WebStorm.
+ * User: q
+ * Date: 15-7-30
+ * Time: 下午11:34
+ * To change this template use File | Settings | File Templates.
+ */
+body{
+    margin: 0px;
+    padding:0px;
+    font-family: "微软雅黑";
+}
+
+@font-face {
+    font-family: "home_fontone";
+    src: url("../font/home_iconfont.ttf");
+}
+
+
+/*banner*/
+#home_banner{
+    width:1349px;
+    height:400px;
+    overflow: hidden;
+    -webkit-transition:all .5s linear;
+}
+#home_banner1{
+    width:4047px;
+    height:400px;
+    -webkit-transition:all .5s linear;
+}
+#home_font1{
+    font-family: "home_fontone";
+    font-size:45px;
+    color: rgba(0, 0, 0, 0.34);
+    position: absolute;top:255px;left: 10px;
+    -webkit-transition:all 0.2s linear;
+}
+
+#home_font1:hover{
+    -webkit-transform:
+        scale(1.05,1.05);
+    -webkit-transition:all 0.2s linear;
+    color: #F3BE00;
+}
+
+#home_font2{
+    font-family: "home_fontone";
+    font-size: 45px;
+    color: rgba(0, 0, 0, 0.34);
+    position: absolute;top:255px;right:10px;
+    -webkit-transition:all 0.2s linear;
+}
+
+#home_font2:hover{
+    -webkit-transform:
+        scale(1.05,1.05);
+    -webkit-transition:all 0.2s linear;
+    color: #F3BE00;
+}
+
+
+/*show*/
+
+
+#home_show{
+    width:1347px;
+    height: 400px;
+    border: 1px solid white;
+}
+.home_show1{
+    width: 449px;
+    height: 198px;
+    border:3px;
+    float: left;
+}
+.home_show2{
+    width: 449px;
+    height: 198px;
+    border:1px;
+    float: left;
+    margin-top:2px;
+}
+#home_show_A{
+    width: 449px;
+    height: 198px;
+    background-color: rgba(0, 0, 0, 0.62);
+    position: absolute;
+    top:497px;left:0px;
+    color: white;
+    text-align: center;
+    opacity:1;
+    -webkit-transition:all 0.2s linear;
+}
+#home_show_A span{
+    font-size: 12px;
+}
+
+.home_show1:hover #home_show_A {
+    opacity:0;
+    -webkit-transition:all 0.2s linear;
+}
+#home_show_B{
+    width: 448px;
+    height: 198px;
+    background-color: rgba(0, 0, 0, 0.62);
+    position: absolute;
+    top:497px;left:450px;
+    color: white;
+    text-align: center;
+    opacity:1;
+    -webkit-transition:all 0.2s linear;
+}
+#home_show_B span{
+    font-size: 12px;
+}
+.home_show1:hover #home_show_B {
+    opacity:0;
+    -webkit-transition:all 0.2s linear;
+}
+
+#home_show_C{
+    width: 449px;
+    height: 198px;
+    background-color: rgba(0, 0, 0, 0.62);
+    position: absolute;
+    top:497px;left:900px;
+    color: white;
+    text-align: center;
+    opacity:1;
+    -webkit-transition:all 0.2s linear;
+}
+#home_show_C span{
+    font-size: 12px;
+}
+
+.home_show1:hover #home_show_C {
+    opacity:0;
+    -webkit-transition:all 0.2s linear;
+}
+
+#home_show2_D{
+    width: 449px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.62);
+    position: absolute;
+    top:697px;left:0px;
+    color: white;
+    text-align: center;
+    opacity:1;
+    -webkit-transition:all 0.2s linear;
+}
+#home_show2_D span{
+    font-size: 12px;
+}
+.home_show2:hover #home_show2_D {
+    opacity:0;
+    -webkit-transition:all 0.2s linear;
+}
+#home_show2_E{
+    width: 449px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.62);
+    position: absolute;
+    top:697px;left:450px;
+    color: white;
+    text-align: center;
+    opacity:1;
+    -webkit-transition:all 0.2s linear;
+}
+#home_show2_E span{
+    font-size: 12px;
+}
+.home_show2:hover #home_show2_E {
+    opacity:0;
+    -webkit-transition:all 0.2s linear;
+}
+
+#home_show2_F{
+    width: 449px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.62);
+    position: absolute;
+    top:697px;left:900px;
+    color: white;
+    text-align: center;
+    opacity:1;
+    -webkit-transition:all 0.2s linear;
+}
+
+#home_show2_F span{
+    font-size: 12px;
+}
+.home_show2:hover #home_show2_F {
+    opacity:0;
+    -webkit-transition:all 0.2s linear;
+}
+/*    页脚*/
+
+#home_end{
+    width: 1347px;
+    height:55px;
+}
+
+#home_end1{
+    position: relative;top: 20px;left: 40px;
+}
+#home_end2{
+    position: relative;top: 20px;left:850px;
+}
